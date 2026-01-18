@@ -1,0 +1,257 @@
+@import "tailwindcss";
+
+/* Default (light) */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1f2937; /* gray-800 */
+  --color-primary: #3b82f6; /* blue-500 */
+  --color-secondary: #9333ea; /* purple-700 */
+}
+
+/* Dark */
+[data-theme="dark"] {
+  --color-bg: #1f2937; /* gray-800 */
+  --color-text: #f9fafb;
+  --color-primary: #3b82f6;
+  --color-secondary: #f472b6; /* pink-400 */
+}
+
+/* Cupcake */
+[data-theme="cupcake"] {
+  --color-bg: #fff1f5;
+  --color-text: #7c3aed;
+  --color-primary: #f43f5e;
+  --color-secondary: #fb923c;
+}
+
+/* Bumblebee */
+[data-theme="bumblebee"] {
+  --color-bg: #fefcbf;
+  --color-text: #1f2937;
+  --color-primary: #fbbf24;
+  --color-secondary: #f97316;
+}
+
+/* Emerald */
+[data-theme="emerald"] {
+  --color-bg: #ecfdf5;
+  --color-text: #065f46;
+  --color-primary: #10b981;
+  --color-secondary: #047857;
+}
+
+/* Corporate */
+[data-theme="corporate"] {
+  --color-bg: #ffffff;
+  --color-text: #334155;
+  --color-primary: #0ea5e9;
+  --color-secondary: #2563eb;
+}
+
+/* Synthwave */
+[data-theme="synthwave"] {
+  --color-bg: #2a213f;
+  --color-text: #f3f4f6;
+  --color-primary: #ff3c78;
+  --color-secondary: #8b5cf6;
+}
+
+/* Retro */
+[data-theme="retro"] {
+  --color-bg: #fef3c7;
+  --color-text: #92400e;
+  --color-primary: #d97706;
+  --color-secondary: #b45309;
+}
+
+/* Cyberpunk */
+[data-theme="cyberpunk"] {
+  --color-bg: #0f172a;
+  --color-text: #f0fdfa;
+  --color-primary: #ff007a;
+  --color-secondary: #0ff;
+}
+
+/* Valentine */
+[data-theme="valentine"] {
+  --color-bg: #fff0f6;
+  --color-text: #831843;
+  --color-primary: #ec4899;
+  --color-secondary: #f472b6;
+}
+
+/* Halloween */
+[data-theme="halloween"] {
+  --color-bg: #fff7ed;
+  --color-text: #7c2d12;
+  --color-primary: #f97316;
+  --color-secondary: #d97706;
+}
+
+/* Garden */
+[data-theme="garden"] {
+  --color-bg: #f0fdf4;
+  --color-text: #14532d;
+  --color-primary: #22c55e;
+  --color-secondary: #16a34a;
+}
+
+/* Forest */
+[data-theme="forest"] {
+  --color-bg: #f0fdfa;
+  --color-text: #064e3b;
+  --color-primary: #10b981;
+  --color-secondary: #047857;
+}
+
+/* Aqua */
+[data-theme="aqua"] {
+  --color-bg: #ecfeff;
+  --color-text: #0f172a;
+  --color-primary: #06b6d4;
+  --color-secondary: #0891b2;
+}
+
+/* Lofi */
+[data-theme="lofi"] {
+  --color-bg: #fef9f0;
+  --color-text: #78350f;
+  --color-primary: #f97316;
+  --color-secondary: #f59e0b;
+}
+
+/* Pastel */
+[data-theme="pastel"] {
+  --color-bg: #faf5ff;
+  --color-text: #5b21b6;
+  --color-primary: #a78bfa;
+  --color-secondary: #f472b6;
+}
+
+/* Fantasy */
+[data-theme="fantasy"] {
+  --color-bg: #f0f0ff;
+  --color-text: #3b0764;
+  --color-primary: #8b5cf6;
+  --color-secondary: #ec4899;
+}
+
+/* Wireframe */
+[data-theme="wireframe"] {
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-primary: #000000;
+  --color-secondary: #000000;
+}
+
+/* Black */
+[data-theme="black"] {
+  --color-bg: #000000;
+  --color-text: #ffffff;
+  --color-primary: #f97316;
+  --color-secondary: #facc15;
+}
+
+/* Luxury */
+[data-theme="luxury"] {
+  --color-bg: #fdf4ff;
+  --color-text: #3b0764;
+  --color-primary: #8b5cf6;
+  --color-secondary: #c084fc;
+}
+
+/* Dracula */
+[data-theme="dracula"] {
+  --color-bg: #282a36;
+  --color-text: #f8f8f2;
+  --color-primary: #6272a4;
+  --color-secondary: #ff79c6;
+}
+
+/* CMYK */
+[data-theme="cmyk"] {
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-primary: #00ffff;
+  --color-secondary: #ff00ff;
+}
+
+/* Autumn */
+[data-theme="autumn"] {
+  --color-bg: #fff7ed;
+  --color-text: #78350f;
+  --color-primary: #f97316;
+  --color-secondary: #d97706;
+}
+
+/* Business */
+[data-theme="business"] {
+  --color-bg: #ffffff;
+  --color-text: #334155;
+  --color-primary: #0ea5e9;
+  --color-secondary: #2563eb;
+}
+
+/* Acid */
+[data-theme="acid"] {
+  --color-bg: #d9f99d;
+  --color-text: #065f46;
+  --color-primary: #84cc16;
+  --color-secondary: #22c55e;
+}
+
+/* Lemonade */
+[data-theme="lemonade"] {
+  --color-bg: #fefce8;
+  --color-text: #78350f;
+  --color-primary: #fcd34d;
+  --color-secondary: #fbbf24;
+}
+
+/* Night */
+[data-theme="night"] {
+  --color-bg: #0f172a;
+  --color-text: #f1f5f9;
+  --color-primary: #3b82f6;
+  --color-secondary: #6366f1;
+}
+
+/* Coffee */
+[data-theme="coffee"] {
+  --color-bg: #f3f2f1;
+  --color-text: #4b3621;
+  --color-primary: #a0522d;
+  --color-secondary: #6b4226;
+}
+
+/* Winter */
+[data-theme="winter"] {
+  --color-bg: #eff6ff;
+  --color-text: #1e3a8a;
+  --color-primary: #3b82f6;
+  --color-secondary: #0ea5e9;
+}
+
+/* Dim */
+[data-theme="dim"] {
+  --color-bg: #1f2937;
+  --color-text: #f9fafb;
+  --color-primary: #3b82f6;
+  --color-secondary: #64748b;
+}
+
+/* Nord */
+[data-theme="nord"] {
+  --color-bg: #eceff4;
+  --color-text: #2e3440;
+  --color-primary: #5e81ac;
+  --color-secondary: #81a1c1;
+}
+
+/* Sunset */
+[data-theme="sunset"] {
+  --color-bg: #fff7ed;
+  --color-text: #7c2d12;
+  --color-primary: #f97316;
+  --color-secondary: #f43f5e;
+}
