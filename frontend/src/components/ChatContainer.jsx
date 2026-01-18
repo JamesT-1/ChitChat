@@ -20,7 +20,6 @@ const ChatContainer = () => {
 
   useEffect(() => {
     getMessages(selectedUser._id);
-
     subscribeToMessages();
     return () => unsubscribeFromMessages();
   }, [
@@ -38,7 +37,7 @@ const ChatContainer = () => {
 
   if (isMessagesLoading) {
     return (
-      <div className="flex-1 flex flex-col overflow-auto">
+      <div className="h-full flex flex-col overflow-auto">
         <ChatHeader />
         <MessageSkeleton />
         <MessageInput />
@@ -47,13 +46,11 @@ const ChatContainer = () => {
   }
 
   return (
-    <div className="flex-1 flex flex-col bg-(--color-bg)">
+    <div className="h-full flex flex-col bg-(--color-bg)">
       <ChatHeader />
-
       <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-(--color-bg)">
         {messages.map((message) => {
           const isOwnMessage = message.senderId === authUser._id;
-
           return (
             <div
               key={message._id}
@@ -71,7 +68,6 @@ const ChatContainer = () => {
                   />
                 </div>
               )}
-
               <div
                 className={`max-w-xs sm:max-w-sm flex flex-col ${
                   isOwnMessage ? "items-end" : "items-start"
@@ -80,7 +76,6 @@ const ChatContainer = () => {
                 <time className="text-xs text-(--color-text) mb-1">
                   {formatMessageTime(message.createdAt)}
                 </time>
-
                 <div
                   className={`rounded-lg px-3 py-2 text-sm
                 ${
@@ -99,7 +94,6 @@ const ChatContainer = () => {
                   {message.text && <p>{message.text}</p>}
                 </div>
               </div>
-
               {isOwnMessage && (
                 <div className="w-10 h-10 rounded-full border border-zinc-700 overflow-hidden">
                   <img
@@ -113,10 +107,8 @@ const ChatContainer = () => {
           );
         })}
       </div>
-
       <MessageInput />
     </div>
   );
 };
-
 export default ChatContainer;
