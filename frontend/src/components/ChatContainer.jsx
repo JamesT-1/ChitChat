@@ -47,7 +47,7 @@ const ChatContainer = () => {
   }
 
   return (
-    <div className="flex-1 flex flex-col overflow-auto bg-(--color-bg)">
+    <div className="flex-1 flex flex-col bg-(--color-bg)">
       <ChatHeader />
 
       <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-(--color-bg)">
