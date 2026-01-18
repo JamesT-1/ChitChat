@@ -4,12 +4,21 @@ export default function SettingsPage() {
   const { theme, setTheme } = useThemeStore();
 
   return (
-    <div className="p-6">
-      <h1 className="text-xl font-semibold mb-5 text-(--color-text) mt-20 text-center">
+    <div className="p-4 sm:p-6">
+      <h1 className="text-xl font-semibold mb-6 text-(--color-text) mt-16 text-center">
         Choose a Theme
       </h1>
 
-      <div className="grid grid-rows-3 grid-flow-col gap-4 auto-cols-max ml-65 mt-4">
+      <div
+        className="
+        grid
+        grid-cols-3
+        sm:grid-cols-4
+        md:grid-cols-6
+        gap-4
+        justify-items-center
+      "
+      >
         {allThemes.map((t) => (
           <button
             key={t}
@@ -38,16 +47,28 @@ export default function SettingsPage() {
         ))}
       </div>
 
-      <div className="pt-6 border-t border-(--color-primary)/30 mt-4">
-        <h2 className="text-sm font-medium mb-3 text-(--color-text) mt-10 text-center">
+      <div className="pt-8 border-t border-(--color-primary)/30 mt-8">
+        <h2 className="text-sm font-medium mb-4 text-(--color-text) text-center">
           Preview
         </h2>
 
         <div
           data-theme={theme}
-          className="rounded-xl p-6 bg-(--color-bg) text-(--color-text) transition"
+          className="rounded-xl p-4 sm:p-6 bg-(--color-bg) text-(--color-text) transition"
         >
-          <div className="ml-100 max-w-md rounded-lg p-5 bg-(--color-bg) border border-(--color-primary)/30 space-y-4">
+          <div
+            className="
+            mx-auto
+            max-w-sm
+            sm:max-w-md
+            rounded-lg
+            p-5
+            bg-(--color-bg)
+            border
+            border-(--color-primary)/30
+            space-y-4
+          "
+          >
             <h3 className="text-center text-lg font-semibold text-(--color-primary)">
               Sample Card
             </h3>
@@ -56,12 +77,21 @@ export default function SettingsPage() {
               This is how the app will look with the selected theme.
             </p>
 
-            <div className="mt-2 flex items-center gap-3">
-              <button className="cursor-pointer ml-25 px-4 py-2 rounded-md bg-(--color-primary) text-(--color-text)">
+            <div
+              className="
+              mt-4
+              flex
+              flex-col
+              sm:flex-row
+              gap-3
+              justify-center
+            "
+            >
+              <button className="px-4 py-2 rounded-md bg-(--color-primary) text-(--color-text)">
                 Primary
               </button>
 
-              <button className="cursor-pointer px-4 py-2 rounded-md border border-(--color-primary) text-(--color-text)">
+              <button className="px-4 py-2 rounded-md border border-(--color-primary) text-(--color-text)">
                 Secondary
               </button>
             </div>
